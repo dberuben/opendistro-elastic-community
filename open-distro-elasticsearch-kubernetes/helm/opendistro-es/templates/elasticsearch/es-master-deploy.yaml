@@ -212,7 +212,7 @@ spec:
           secretName: {{ .Values.elasticsearch.ssl.admin.existingCertSecret }}
       {{- end }}
       {{- if .Values.elasticsearch.securityConfig.actionGroupsSecret }}
-      - name: action-group
+      - name: action-groups
         secret:
           secretName: {{ .Values.elasticsearch.securityConfig.actionGroupsSecret }}
       {{- end }}
